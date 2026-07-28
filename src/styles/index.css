@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-brand-graphite font-sans;
+  }
+
+  ::selection {
+    @apply bg-brand-pink/20 text-brand-graphite;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 
+           bg-brand-pink text-white font-semibold rounded-full
+           shadow-pink-glow hover:bg-brand-pink-dark 
+           transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]
+           focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3.5 
+           bg-brand-blue text-white font-semibold rounded-full
+           shadow-blue-glow hover:bg-brand-blue-dark 
+           transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]
+           focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+           border-2 border-brand-blue text-brand-blue font-semibold rounded-full
+           hover:bg-brand-blue hover:text-white
+           transition-all duration-300
+           focus:outline-none focus:ring-2 focus:ring-brand-blue/50 focus:ring-offset-2;
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .card-soft {
+    @apply bg-white rounded-3xl shadow-soft border border-gray-100 
+           overflow-hidden transition-all duration-300;
+  }
+
+  .card-soft:hover {
+    @apply shadow-soft-lg -translate-y-1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-blue to-brand-pink bg-clip-text text-transparent;
+  }
+}
+
+/* Swiper custom */
+.swiper-pagination-bullet {
+  @apply !bg-brand-blue/40 !opacity-100;
+}
+.swiper-pagination-bullet-active {
+  @apply !bg-brand-pink !w-6 !rounded-full;
+}
