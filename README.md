@@ -1,4 +1,4 @@
-# M&V
+# M&V Gospel Wear
 
 Landing page premium / micro e-commerce de moda cristã. Todas as vendas são realizadas via WhatsApp.
 
@@ -101,4 +101,4 @@ Mesmo arquivo: `instagram`, `facebook`, `url`, etc.
 
 ## 📄 Licença
 
-Projeto desenvolvido para M&V. Todos os direitos reservados.
+Projeto desenvolvido para M&V Gospel Wear. Todos os direitos reservados.

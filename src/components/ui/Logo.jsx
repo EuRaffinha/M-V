@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 /**
  * Logo oficial M&V
- * Coração + tipografia M&V
+ * Coração + tipografia M&V (sem subtítulo Gospel Wear)
  */
 export default function Logo({ className = '', size = 'md' }) {
   const sizes = {
